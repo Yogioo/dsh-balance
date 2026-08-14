@@ -1,0 +1,34 @@
+{
+  "name": "dsh-balance",
+  "version": "0.1.0",
+  "description": "DeepSeek API 余额显示:dsh web 输入框下方常驻余额读数 + check_balance 模型工具。声明 dsh.bundle,一条 dsh plugin add 即完成安装与挂载。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-slots"
+      ],
+      "platform": "web"
+    }
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "peerDependencies": {
+    "@deepseek-ai/schemastery": "^3.18.1",
+    "@deepseek-ai/dsh-tools": "^0.1.0-rc.6"
+  },
+  "license": "MIT"
+}

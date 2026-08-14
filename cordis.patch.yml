@@ -1,0 +1,12 @@
+# dsh-balance bundle patch: mounts the balance plugin row over the profile root.
+# Applied automatically when the package is added to dsh.profile.bundles
+# (dsh plugin --profile <name> add dsh-balance). To override config later,
+# target the same row id from the user's own cordis.patch.yml:
+#   - id: dsh-balance
+#     config:
+#       refreshMs: 30000
+
+- insert:
+    - id: dsh-balance
+      name: dsh-balance
+      config: {}

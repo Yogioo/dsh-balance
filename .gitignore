@@ -1,0 +1,13 @@
+# 打包产物与本地杂项不进版本库
+*.tgz
+*.log
+
+# Node
+node_modules/
+.pnpm-store/
+
+# 编辑器/系统
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
