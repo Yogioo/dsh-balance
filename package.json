@@ -1,6 +1,6 @@
 {
   "name": "dsh-balance",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "DeepSeek API 余额显示:dsh web 输入框下方常驻余额读数 + check_balance 模型工具。声明 dsh.bundle,一条 dsh plugin add 即完成安装与挂载。",
   "type": "module",
   "main": "lib/index.js",
